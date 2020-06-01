@@ -245,6 +245,83 @@ body {
   background: #ffffff;
 }
 
+.about {
+  padding: 100px 0;
+  background: #fafafa;
+}
+
+.about .about-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about .about-wrap .card {
+  width: 33%;
+  background: #ffffff;
+  padding: 50px;
+  height: 324px;
+  margin: 1px;
+  position: relative;
+}
+
+.about .about-wrap .card:hover .icon .fas {
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+
+.about .about-wrap .card:hover .content {
+  -webkit-transform: translate3d(0, -30%, 0);
+          transform: translate3d(0, -30%, 0);
+}
+
+.about .about-wrap .card .icon .fas {
+  font-family: 'fa-solid-900';
+  color: #999caa;
+  font-size: 30px;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+          transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.about .about-wrap .card .content {
+  margin-top: 30px;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+          transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.about .about-wrap .card .content h5 {
+  font-size: 22px;
+  color: #515769;
+  font-family: 'Hind-Bold';
+  line-height: 1.4;
+}
+
+.about .about-wrap .card .content p {
+  margin-top: 15px;
+  font-size: 15px;
+  color: #a6a7aa;
+  line-height: 1.4;
+}
+
+.about .about-wrap .card a {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
 @media screen and (max-width: 990px) {
   .header .top-header {
     background: #ffffff;
@@ -337,6 +414,18 @@ body {
   }
   .header .top-header .menu-burger.show a {
     opacity: 1;
+  }
+}
+
+@media screen and (max-width: 925px) {
+  .about .about-wrap .card {
+    width: 49%;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .about .about-wrap .card {
+    width: 100%;
   }
 }
 

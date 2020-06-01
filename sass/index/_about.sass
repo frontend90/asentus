@@ -1,0 +1,47 @@
+.about 
+  padding: 100px 0
+  background: #fafafa
+  & .about-wrap 
+    display: flex 
+    justify-content: center
+    flex-wrap: wrap
+    & .card 
+      width: 33%
+      background: #ffffff
+      padding: 50px 
+      height: 324px 
+      margin: 1px
+      position: relative
+      &:hover .icon .fas 
+        transform: translate3d(0,-100%,0)
+        opacity: 0
+      &:hover .content 
+        transform: translate3d(0,-30%,0)
+      & .icon 
+        & .fas 
+          +solid 
+          color: #999caa
+          font-size: 30px 
+          transition: all .3s linear 
+          transition-timing-function: cubic-bezier(.7,1,.7,1)
+      & .content 
+        margin-top: 30px 
+        transition: .3s linear 
+        transition-timing-function: cubic-bezier(.7,1,.7,1)
+        & h5 
+          font-size: 22px 
+          color: #515769
+          +bold 
+          line-height: 1.4 
+        & p 
+          margin-top: 15px 
+          font-size: 15px 
+          color: #a6a7aa
+          line-height: 1.4  
+      & a 
+        position: absolute
+        display: block 
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
