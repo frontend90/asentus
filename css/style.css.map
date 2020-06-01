@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,UAAU;EACR,WAAW,EAAE,cAAc;EAC3B,GAAG,EAAE,gCAAgC;;;AAGvC,UAAU;EACR,WAAW,EAAE,eAAe;EAC5B,GAAG,EAAE,iCAAiC;;;AAGxC,UAAU;EACR,WAAW,EAAE,WAAW;EACxB,GAAG,EAAE,6BAA6B;;;AAGpC,UAAU;EACR,WAAW,EAAE,cAAc;EAC3B,GAAG,EAAE,gCAAgC",
+    "sources": [
+        "../sass/style.sass",
+        "../sass/_interface.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
