@@ -18,3 +18,17 @@
   src: url('../fonts/Hind-Regular.ttf')
 @mixin reg
   font-family: 'Hind-Regular'
+@font-face 
+  font-family: 'Hind-Semibold'
+  src: url('../fonts/Hind-Semibold.ttf')
+@mixin semi
+  font-family: 'Hind-Semibold'
+body 
+  +reg 
+  color: #333333
+  font-size: 14px 
+.container 
+  max-width: 1200px 
+  margin: 0 auto
+  padding: 0 15px 
+  height: 100%
