@@ -95,6 +95,14 @@
         margin: 50px auto 0 
         &:first-of-type
           margin-top: 0
+@media screen and ( max-width: 800px )
+  .test 
+    & .test-wrap 
+      justify-content: center
+      & .left 
+        width: 100%
+      & .right 
+        display: none 
 @media screen and ( max-width: 615px )
   .about 
     & .about-wrap  
@@ -105,13 +113,11 @@
     & .products-wrap
       & .card 
         width: 100%
-  .test 
-    & .test-wrap 
-      justify-content: center
-      & .left 
+  .showcase
+    & .showcase-wrap
+      flex-direction: column 
+      & .card 
         width: 100%
-      & .right 
-        display: none 
 @media screen and ( max-width: 570px )
   .pricing 
     & .pricing-wrap 

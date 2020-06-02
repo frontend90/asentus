@@ -1,0 +1,76 @@
+.showcase
+  background: #fafafa
+  padding: 100px 0 
+  & .title
+    width: 50%
+    & h5 
+      color: #515769
+      +bold 
+      font-size: 30px
+      line-height: 1.4 
+    & p
+      margin-top: 15px 
+      font-size: 15px 
+      color: #a6a7aa
+      line-height: 1.4 
+  & .showcase-wrap 
+    margin-top: 55px 
+    display: flex 
+    flex-wrap: wrap 
+    & .card 
+      margin-bottom: 4px 
+      padding: 0 2px  
+      position: relative
+      overflow: hidden
+      &:hover .overlay 
+        opacity: 1
+        visibility: visible
+      &:hover .overlay .content 
+        transform: translate3d(0,0,0)
+      & img 
+        width: 100%
+      & .overlay 
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        width: calc(100% - 4px)
+        height: 100%
+        background: rgba(#000000,.5)
+        opacity: 0
+        visibility: hidden
+        transition: .3s linear 
+        transition-timing-function: cubic-bezier(.7,1,.7,1)
+        & .content 
+          color: #ffffff
+          bottom: 0
+          position: absolute
+          padding: 25px 
+          transform: translate3d(0,20px,0)
+          transition: .3s linear 
+          transition-timing-function: cubic-bezier(.7,1,.7,1)
+          & h6 
+            font-size: 22px 
+            +bold 
+            line-height: 1.4 
+          & p 
+            margin-top: 5px 
+            font-size: 15px 
+      & a 
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        width: calc(100% - 4px)
+        height: 100%
+        display: inline-block 
+    & .card1 
+      width: 66.6%
+    & .card2 
+      width: 33.3%
+    & .card3
+      width: 33.3%
+    & .card4 
+      width: 33.3%
+    & .card5 
+      width: 33.3%
