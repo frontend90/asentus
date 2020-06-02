@@ -82,3 +82,10 @@ $('.clients-slider').slick({
     }
   ]
 });
+
+/************    reviews slick      **************/
+$('.reviews-slider').slick({
+  arrows: false,
+  dots: false,
+  autoplay: true
+});

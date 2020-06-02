@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'fa-solid-900';
   src: url("../fonts/fa-solid-900.ttf");
@@ -458,6 +459,66 @@ body {
   opacity: .8;
 }
 
+.reviews {
+  padding: 100px 0;
+}
+
+.reviews .title h5 {
+  font-size: 30px;
+  font-family: 'Hind-Bold';
+  color: #515769;
+  line-height: 1.4;
+}
+
+.reviews .reviews-slider {
+  margin-top: 25px;
+  max-width: 848px;
+}
+
+.reviews .reviews-slider .slick-list {
+  overflow: hidden;
+}
+
+.reviews .reviews-slider .slick-list .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews .reviews-slider .slick-list .slick-track .reviews-slider-block {
+  padding: 0 20px 0 40px;
+  position: relative;
+}
+
+.reviews .reviews-slider .slick-list .slick-track .reviews-slider-block::before {
+  content: '“';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 60px;
+  color: #17bed2;
+  line-height: 1;
+}
+
+.reviews .reviews-slider .slick-list .slick-track .reviews-slider-block p {
+  font-size: 17px;
+  color: #a6a7aa;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.reviews .reviews-slider .slick-list .slick-track .reviews-slider-block h6 {
+  font-size: 15px;
+  font-weight: normal;
+  color: #a6a7aa;
+}
+
+.reviews .reviews-slider .slick-list .slick-track .reviews-slider-block h6 strong {
+  font-family: 'Hind-Bold';
+  color: #81848f;
+  font-size: 14px;
+}
+
 @media screen and (max-width: 990px) {
   .header .top-header {
     background: #ffffff;
@@ -535,6 +596,7 @@ body {
   .header .top-header .menu-burger a {
     display: block;
     opacity: 0;
+    visibility: hidden;
     margin: 0;
     color: #515769;
     line-height: 1.4;
@@ -550,6 +612,7 @@ body {
   }
   .header .top-header .menu-burger.show a {
     opacity: 1;
+    visibility: visible;
   }
 }
 
