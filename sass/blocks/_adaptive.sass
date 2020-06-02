@@ -76,9 +76,22 @@
     & .about-wrap  
       & .card 
         width: 49%
+@media screen and ( max-width: 865px )
+  .products
+    & .products-wrap
+      flex-direction: column  
+      margin-top: 5px 
+      & .card 
+        margin: 50px auto 0 
+        width: 50%
 @media screen and ( max-width: 615px )
   .about 
     & .about-wrap  
+      & .card 
+        width: 100%
+@media screen and ( max-width: 600px )
+  .products
+    & .products-wrap
       & .card 
         width: 100%
 @media screen and ( max-width: 455px )

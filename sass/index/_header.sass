@@ -43,6 +43,8 @@
             &:hover::before 
               opacity: 1
               transition: opacity .3s linear 
+            &.active::before 
+              opacity: 1
             &::before
               content: ''
               position: absolute
@@ -97,11 +99,11 @@
                 background: #ffffff
                 color: #a6a7aa
         & .block1-slider 
-          background: url(../img/header/1.jpg) no-repeat 
+          background: url(../img/index/header/1.jpg) no-repeat 
           background-position: center 
           background-size: cover 
         & .block2-slider 
-          background: url(../img/header/2.jpg) no-repeat 
+          background: url(../img/index/header/2.jpg) no-repeat 
           background-position: center 
           background-size: cover 
     & .slick-dots 

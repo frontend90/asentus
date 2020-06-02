@@ -45,3 +45,6 @@ $('.menu-burger a').click(function () {
   $('.menu-burger').removeClass('show');
   $('.burger').removeClass('active');
 });
+
+/***************    WOW     ********************/
+new WOW().init();
