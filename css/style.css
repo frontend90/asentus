@@ -429,6 +429,35 @@ body {
   right: -15px;
 }
 
+.clients {
+  background: #fafafa;
+  padding: 100px 0;
+}
+
+.clients .clients-slider .slick-list {
+  overflow: hidden;
+}
+
+.clients .clients-slider .slick-list .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.clients .clients-slider .slick-list .slick-track .clients-slider-block {
+  text-align: center;
+}
+
+.clients .clients-slider .slick-list .slick-track .clients-slider-block img {
+  cursor: pointer;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.clients .clients-slider .slick-list .slick-track .clients-slider-block img:hover {
+  opacity: .8;
+}
+
 @media screen and (max-width: 990px) {
   .header .top-header {
     background: #ffffff;

@@ -48,3 +48,37 @@ $('.menu-burger a').click(function () {
 
 /***************    WOW     ********************/
 new WOW().init();
+
+/************    clients slick      **************/
+$('.clients-slider').slick({
+  arrows: false,
+  dots: false,
+  autoplay: true,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  responsive: [{
+      breakpoint: 1071,
+      settings: {
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 861,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 661,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 461,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+});
