@@ -1,0 +1,70 @@
+.pricing
+  background: #fafafa
+  padding: 100px 0 
+  & .pricing-wrap 
+    display: flex 
+    justify-content: space-between
+    align-items: baseline
+    & .card 
+      width: 33.3%
+      background: #ffffff
+      margin: 50px 1px 0 
+      padding: 70px 45px 
+      & .icon 
+        & .fas 
+          +solid 
+          font-size: 30px 
+          color: #999caa
+      & .title 
+        margin-top: 30px 
+        & h5 
+          font-size: 22px 
+          color: #515769
+          +bold 
+          line-height: 1.4 
+          & span 
+            font-size: 14px 
+            color: #bfc1c7
+            +reg 
+            font-weight: normal
+        & p 
+          margin-top: 15px 
+          font-size: 15px 
+          color: #a6a7aa
+          line-height: 1.4 
+      & .content 
+        margin-top: 30px 
+        & p 
+          color: #81848f
+          padding-left: 20px 
+          font-size: 13px 
+          margin-bottom: 10px 
+          position: relative
+          &::before
+            content: ''
+            position: absolute
+            left: 0
+            top: 50%
+            transform: translateY(-50%)
+            width: 9px 
+            height: 2px 
+            background: #17bed2
+        & a 
+          display: inline-flex 
+          margin-top: 50px 
+          text-transform: uppercase
+          width: 110px 
+          height: 50px 
+          background: #f3f4f5
+          align-items: center
+          justify-content: center
+          font-size: 13px 
+          +semi 
+          color: #515769
+          transition: .3s linear 
+          &:hover
+            background: #17bed2
+            color: #ffffff
+    & .prof 
+      padding: 110px 45px 
+      margin-top: 0

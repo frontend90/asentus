@@ -86,6 +86,15 @@
       & .card 
         margin: 50px auto 0 
         width: 50%
+@media screen and ( max-width: 845px )
+  .pricing 
+    & .pricing-wrap 
+      flex-direction: column 
+      & .card 
+        width: 50%
+        margin: 50px auto 0 
+        &:first-of-type
+          margin-top: 0
 @media screen and ( max-width: 615px )
   .about 
     & .about-wrap  
@@ -96,6 +105,11 @@
     & .products-wrap
       & .card 
         width: 100%
+@media screen and ( max-width: 570px )
+  .pricing 
+    & .pricing-wrap 
+      & .card 
+        width: 80%
 @media screen and ( max-width: 455px )
   .header 
     & .header-slider 
@@ -105,3 +119,8 @@
             & .overlay 
               & h2 
                 font-size: 60px 
+@media screen and ( max-width: 370px )
+  .pricing 
+    & .pricing-wrap 
+      & .card 
+        width: 100%
