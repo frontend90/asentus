@@ -103,6 +103,17 @@
         width: 100%
       & .right 
         display: none 
+@media screen and ( max-width: 650px )
+  .footer 
+    & .footer-top  
+      flex-direction: column 
+      & .block 
+        margin: auto
+        width: 100%
+      & .left 
+        justify-content: center
+      & .right 
+        margin-top: 50px 
 @media screen and ( max-width: 615px )
   .about 
     & .about-wrap  
@@ -123,6 +134,14 @@
     & .pricing-wrap 
       & .card 
         width: 80%
+@media screen and ( max-width: 500px )
+  .footer 
+    & .footer-bottom 
+      flex-direction: column 
+      & .copy 
+        margin-top: 20px 
+        & p 
+          font-size: 14px 
 @media screen and ( max-width: 455px )
   .header 
     & .header-slider 

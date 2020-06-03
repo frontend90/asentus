@@ -1,0 +1,98 @@
+.footer
+  background: url(../img/index/footer/1.jpg) no-repeat 
+  background-position: center
+  background-size: cover 
+  background-attachment: fixed
+  & .footer-top 
+    padding: 100px 0 
+    display: flex 
+    justify-content: space-between
+    & .left 
+      display: flex
+      width: 50%
+      & .links 
+        width: 33.5%
+        & a 
+          display: block 
+          color: #cbd3e1
+          font-size: 16px 
+          +semi 
+          margin-bottom: 25px 
+          &:hover
+            color: #ffffff
+      & .social 
+        & a 
+          display: block 
+          color: #cbd3e1
+          font-size: 16px 
+          +semi 
+          margin-bottom: 25px 
+          &:hover
+            color: #ffffff
+    & .right 
+      width: 39%
+      & h5 
+        color: #ffffff
+        font-size: 30px
+        +bold 
+        line-height: 1.4
+      & form 
+        margin-top: 15px 
+        & input 
+          background: rgba(#000000,.15)
+          width: 100%
+          margin-bottom: 20px 
+          height: 50px
+          color: #a6a7aa
+          padding: 15px
+          &::placeholder 
+            color: #a6a7aa
+        & textarea
+          background: rgba(#000000,.15)
+          width: 100%
+          height: 130px
+          color: #a6a7aa
+          padding: 15px
+          &::placeholder 
+            color: #a6a7aa
+        & .btn 
+          margin-top: 30px 
+          & button 
+            text-transform: uppercase
+            color: #ffffff
+            background: #17bed2
+            width: 105px 
+            height: 50px 
+            font-size: 13px 
+            +semi 
+            transition: .3s linear 
+            &:hover
+              opacity: .7
+  & .footer-line 
+    width: 100%
+    height: 1px 
+    background: rgba(#ffffff,.2)
+  & .footer-bottom 
+    padding: 40px 0 
+    display: flex 
+    justify-content: space-between
+    align-items: center
+    & .logo 
+      & h3 
+        font-size: 22px 
+        +semi 
+        & a 
+          color: #ffffff
+          & span 
+            color: #17BED2
+    & .copy 
+      & p 
+        font-size: 15px 
+        color: #a6a7aa
+        & a 
+          +bold 
+          color: #17bed2
+          &:hover
+            color: #999caa
+
+
