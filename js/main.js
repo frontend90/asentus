@@ -89,3 +89,15 @@ $('.reviews-slider').slick({
   dots: false,
   autoplay: true
 });
+
+/****************      scroll anchor     ***************/
+$(window).scroll(function () {
+
+  var wScroll = $(this).scrollTop();
+
+  if (wScroll > 250) {
+    $('.anchor').addClass('active');
+  } else {
+    $('.anchor').removeClass('active');
+  };
+});

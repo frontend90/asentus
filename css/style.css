@@ -250,6 +250,50 @@ body {
   background: #ffffff;
 }
 
+.header .anchor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  right: 10px;
+  bottom: 10px;
+  background: rgba(81, 87, 105, 0.4);
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+          transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  border-radius: 3px;
+  z-index: 9997;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.header .anchor.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header .anchor:hover {
+  background: #515769;
+}
+
+.header .anchor a {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .about {
   padding: 100px 0;
   background: #fafafa;
