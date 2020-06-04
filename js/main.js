@@ -101,3 +101,9 @@ $(window).scroll(function () {
     $('.anchor').removeClass('active');
   };
 });
+
+/*$('.menu a').click(function(){
+ var active_menu = $(this).id; 
+
+ $('active_menu').addClass('active');
+});*/
