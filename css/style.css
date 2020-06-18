@@ -1378,6 +1378,10 @@ body {
   width: 31%;
 }
 
+.about-team .about-team-wrap .card .img {
+  background: #ffffff;
+}
+
 .about-team .about-team-wrap .card .img img {
   width: 100%;
 }
