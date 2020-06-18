@@ -1,0 +1,38 @@
+.products-about 
+  padding: 100px 0 
+  border-bottom: 1px solid #edf0f2
+  & .products-wrap 
+    display: flex 
+    justify-content: space-between
+    & .card 
+      width: 31%
+      & h6 
+        font-size: 22px 
+        color: #515769
+        +bold 
+        line-height: 1.4 
+      & p 
+        margin-top: 15px 
+        font-size: 15px 
+        color: #a6a7aa
+        line-height: 1.4 
+      & a
+        display: inline-block 
+        margin-top: 15px 
+        text-transform: uppercase
+        font-size: 13px 
+        +semi 
+        color: #81848f
+        position: relative 
+        &:hover
+          opacity: .8
+        &::before
+          content: ''
+          position: absolute
+          top: 8px 
+          right: -15px 
+          width: 9px 
+          height: 2px 
+          background: #17bed2
+
+  
