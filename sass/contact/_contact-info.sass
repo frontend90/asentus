@@ -1,0 +1,40 @@
+.contact-info 
+  padding: 100px 0 
+  & .contact-info-wrap 
+    display: flex 
+    justify-content: space-between
+    & .block 
+      width: 31%
+      & .title-wrap 
+        display: flex 
+        align-items: center
+        & h5 
+          font-size: 22px 
+          +bold 
+          line-height: 1.4
+          & a 
+            color: #515769
+            &:hover
+              opacity: .7
+        & span 
+          color: #bfc1c7
+          text-transform: uppercase
+          margin-left: 20px 
+      & .content 
+        margin-top: 15px 
+        & p 
+          line-height: 1.4 
+          font-size: 15px 
+          color: #a6a7aa
+        & .links 
+          margin-top: 15px 
+          & a 
+            display: block
+            margin-bottom: 10px 
+            font-size: 13px 
+            color: #81848f
+            +semi 
+            & .fas 
+              +solid 
+              color: #17bed2
+              margin-right: 10px 
